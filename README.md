@@ -5,7 +5,7 @@ End-to-end neural network for time series classification
 
 VibNet is a novel temporal convolutional neural network architecture, designed for supervised classification problems from raw time domain data.
 
-We tested our architecture against the Case Western Reserve University [4] dataset for mechanical bearing fault classification.
+We tested our architecture against the Case Western Reserve University ![link](https://csegroups.case.edu/bearingdatacenter/pages/welcome-case-western-reserve-university-bearing-data-center-website) dataset for mechanical bearing fault classification.
 The main advantage of our solution over other state-of-the-art techniques involving convolutions is that it is completely end-to-end, time domain to classification result, thus making it very appealing for time sensitive, online fault monitoring applications. Furthermore, we exploit pre-existing characteristics of time series to achieve improved interpretability. We do so by applying a strong inductive bias in the first few layers via dilated convolutions. Additionally, we add multiple parallel convolutional paths as to achieve a so called "multi-head" architecture, where each path has a different dilation coefficient. 
 
 The intuition behind dilation is that it is a form of downsampling of the signal. Different dilation coefficients cause downsampling of different magnitudes. By forcing the network to use features of signals downsampled to different frequencies we can learn more about which frequency bands the network chooses to focus on while at the same time teaching it about the nature of its input data. 
