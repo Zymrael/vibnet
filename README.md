@@ -1,7 +1,7 @@
 # vibnet
 End-to-end neural network for time series classification
 
-![vibnet](diagram.png)
+![vibnet](vndiagram.png)
 
 VibNet is a novel temporal convolutional neural network architecture, designed for supervised classification problems from raw time domain data.
 
